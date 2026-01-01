@@ -3,8 +3,8 @@
 To use a template in the typst script, do the following:
 
 ```typst
-// Import the function from github
-#import "https://raw.githubusercontent.com/klemengit/typst_templates/main/template.typ": project
+// Import the function from the template (must be in the same directory)
+#import "template.typ": project
 
 // Call the template function
 #show: project
