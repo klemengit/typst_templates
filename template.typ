@@ -3,6 +3,7 @@
   title: none,
   authors: (),
   date: none,
+  logo_path: none,
   body
 ) = {
   // Set document metadata
@@ -17,7 +18,17 @@
   set page(
     paper: "a4", 
     margin: (x: 1.1in, y: 1in),
-    numbering: "1"
+    numbering: "1",
+    header: [
+      #grid(
+        columns: (2fr, 3fr),
+        align: (left, right),
+        if logo_path != none {
+          image(logo_path, width: 90%)
+        },
+        title
+      )
+    ],
   )
 
   set par(
