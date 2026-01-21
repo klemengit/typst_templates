@@ -38,6 +38,7 @@
 
   set text(
     font: "new computer modern",
+    // font: "Latin Modern Sans 12",
     size: 11pt
   )
 
